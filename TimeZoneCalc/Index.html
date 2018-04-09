@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Zone Calculator</title>
+    <meta charset="utf-8" />
+    <link href="Content/themes/base/all.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Index.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.2.3.min.js"></script>
+    <script src="Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="Scripts/TimeZone.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Time Zone Calculator</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Using jQuery prototype function</h3>
+                <p>Here we are going to use prototype functions we created</p>
+                <div class="form-group">
+                    <label class="label label-primary">Please select date:</label>
+                    <br />
+                    <br />
+                    <input class="form-control" type="text" id="txtTimeZone" />
+                    <br />
+                    <br />
+                    <input type="button" value="Submit" id="btnSubmit" class="btn btn-primary btn-block"/>
+                    <br />
+                    <div class="panel panel-default">
+                        <div id="placeholder" class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3>Using Google API</h3>
+                <p>Here we are going to use Google API</p>
+                <div class="form-group">
+                    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                    <div id="map"></div>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YourKey&libraries=places&callback=initAutocomplete" type="text/javascript"></script>
+                    <div class="panel panel-default">
+                        <div id="latlon" class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
